@@ -21,7 +21,7 @@ $ helm uninstall prom
 4 helm install prom-1 prometheus-community/prometheus --set alertmanager.name=my-am --set server.service.type=NodePort
 
 Quick tip-
-Use the below command to list the default values for Prometheus installation-
+Use the below command to list the default values for Prometheus chart-
 $ helm show values prometheus-community/prometheus
 
 ```
