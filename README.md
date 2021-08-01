@@ -16,7 +16,7 @@ $ helm repo add prometheus-community https://prometheus-community.github.io/helm
 $ helm repo update
 $ helm install prom prometheus-community/prometheus
 
-3. Uninstall Prometheus installed and intall it with custom values- by changing name of default alert manager and service type.
+3. Uninstall Prometheus installed and install it with custom values- by changing name of default alert manager and server service type.
 $ helm uninstall prom
 4 helm install prom-1 prometheus-community/prometheus --set alertmanager.name=my-am --set server.service.type=NodePort
 
